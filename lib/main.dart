@@ -15,21 +15,33 @@ class MyApp extends StatelessWidget {
           title: Text("Aplikasiku"),
         ),
         body: Center(
-          child: Container(
-            padding: EdgeInsets.all(10.0),
-            decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.white, // warna border
-                width: 2.0, // lebar border
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                padding: EdgeInsets.all(10.0),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.white, // warna border
+                    width: 2.0, // lebar border
+                  ),
+                ),
+                child: Text(
+                  "HALLO SAYA ANI",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                  ),
+                ),
               ),
-            ),
-            child: Text(
-              "HALLO SAYA ANI",
-              style: TextStyle(
-                color: Colors.white, // warna teks
-                fontSize: 20.0, // ukuran teks
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  print('Tombol ditekan!');
+                },
+                child: Text('Klik disini'),
               ),
-            ),
+            ],
           ),
         ),
       ),
