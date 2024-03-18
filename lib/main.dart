@@ -8,14 +8,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
-      appBar: AppBar(
-        title: Text("Aplikasiku"),
-      ),
-      body: Center(
-          child: Text(
-        "HALLO SAYA ANI",
-      )),
-    ));
+          backgroundColor: Colors.lightBlue,
+          appBar: AppBar(
+            title: Text("Aplikasiku"),
+          ),
+          body: Center(
+              child: Text(
+            "HALLO SAYA ANI",
+          )),
+        ));
   }
 }
